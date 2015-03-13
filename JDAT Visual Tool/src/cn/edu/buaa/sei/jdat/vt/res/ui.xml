@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TemplateDefinitions version="1.0">
+
+	<Resources>
+		<AcceleratedImage id="IMG_BACKGROUND" source="Background.png"/>
+		<AcceleratedImage id="IMG_CHECKBOX_NORMAL" source="CheckBoxNormal.png"/>
+		<AcceleratedImage id="IMG_CHECKBOX_HIGHLIGHTED" source="CheckBoxHighlighted.png"/>
+		<AcceleratedImage id="IMG_CHECKBOX_SELECTED" source="CheckBoxSelected.png"/>
+		<AcceleratedImage id="IMG_RADIOBUTTON_NORMAL" source="RadioButtonNormal.png"/>
+		<AcceleratedImage id="IMG_RADIOBUTTON_HIGHLIGHTED" source="RadioButtonHighlighted.png"/>
+		<AcceleratedImage id="IMG_RADIOBUTTON_SELECTED" source="RadioButtonSelected.png"/>
+		<AcceleratedImage id="IMG_VALUEBUBBLE" source="ValueBubble.png"/>
+		<AcceleratedImage id="ICON_ABSTRACT" source="icons/icon_abstract.png"/>
+		<AcceleratedImage id="ICON_CLASS" source="icons/icon_class.png"/>
+		<AcceleratedImage id="ICON_CONSTRUCTOR" source="icons/icon_constructor.png"/>
+		<AcceleratedImage id="ICON_DEFAULT" source="icons/icon_default.png"/>
+		<AcceleratedImage id="ICON_ENUM" source="icons/icon_enum.png"/>
+		<AcceleratedImage id="ICON_FIELD" source="icons/icon_field.png"/>
+		<AcceleratedImage id="ICON_FINAL" source="icons/icon_final.png"/>
+		<AcceleratedImage id="ICON_INTERFACE" source="icons/icon_interface.png"/>
+		<AcceleratedImage id="ICON_JAR" source="icons/icon_jar.png"/>
+		<AcceleratedImage id="ICON_METHOD" source="icons/icon_method.png"/>
+		<AcceleratedImage id="ICON_PACKAGE" source="icons/icon_package.png"/>
+		<AcceleratedImage id="ICON_PRIVATE" source="icons/icon_private.png"/>
+		<AcceleratedImage id="ICON_PROTECTED" source="icons/icon_protected.png"/>
+		<AcceleratedImage id="ICON_QUESTION" source="icons/icon_question.png"/>
+		<AcceleratedImage id="ICON_STATIC" source="icons/icon_static.png"/>
+		<AcceleratedImage id="ICON_UNKNOWN_TYPE" source="icons/icon_unknown_type.png"/>
+		<StretchableImage id="IMG_BUTTON_NORMAL" source="ButtonNormal.png" margins="6, 6, 37, 36"/>
+		<StretchableImage id="IMG_BUTTON_PRESSED" source="ButtonPressed.png" margins="6, 6, 37, 36"/>
+		<StretchableImage id="IMG_BUTTON_HIGHLIGHTED" source="ButtonHighlighted.png" margins="6, 6, 37, 36"/>
+		<StretchableImage id="IMG_TEXTBOX_NORMAL" source="TextBoxNormal.png" margins="6, 6, 29, 28"/>
+		<StretchableImage id="IMG_DEPTH_BACKGROUND" source="DepthBackground.png" margins="4, 4, 55, 54"/>
+		<StretchableImage id="IMG_SCROLL_INDICATOR" source="ScrollIndicator.png" margins="0, 4, 5, 11"/>
+		<StretchableImage id="IMG_TABBUTTON_LEFT_NORMAL" source="TabButtonLeftNormal.png" margins="5, 4, 37, 32"/>
+		<StretchableImage id="IMG_TABBUTTON_MIDDLE_NORMAL" source="TabButtonMiddleNormal.png" margins="1, 1, 36, 35"/>
+		<StretchableImage id="IMG_TABBUTTON_RIGHT_NORMAL" source="TabButtonRightNormal.png" margins="1, 4, 33, 32"/>
+		<StretchableImage id="IMG_TABBUTTON_LEFT_HIGHLIGHTED" source="TabButtonLeftHighlighted.png" margins="5, 4, 37, 32"/>
+		<StretchableImage id="IMG_TABBUTTON_MIDDLE_HIGHLIGHTED" source="TabButtonMiddleHighlighted.png" margins="1, 1, 36, 35"/>
+		<StretchableImage id="IMG_TABBUTTON_RIGHT_HIGHLIGHTED" source="TabButtonRightHighlighted.png" margins="1, 4, 33, 32"/>
+		<StretchableImage id="IMG_TABBUTTON_LEFT_PRESSED" source="TabButtonLeftPressed.png" margins="5, 4, 37, 32"/>
+		<StretchableImage id="IMG_TABBUTTON_MIDDLE_PRESSED" source="TabButtonMiddlePressed.png" margins="1, 1, 36, 35"/>
+		<StretchableImage id="IMG_TABBUTTON_RIGHT_PRESSED" source="TabButtonRightPressed.png" margins="1, 4, 33, 32"/>
+		<StretchableImage id="IMG_PROGRESSBAR_BACKGROUND" source="ProgressBarBackground.png" margins="4, 3, 16, 5"/>
+		<StretchableImage id="IMG_PROGRESSBAR_FOREGROUND" source="ProgressBarForeground.png" margins="4, 2, 13, 3"/>
+		<StretchableImage id="IMG_ORANGE_PANEL" source="OrangePanel.png" margins="5, 4, 45, 22"/>
+		<StretchableImage id="IMG_BROWN_PANEL" source="BrownPanel.png" margins="5, 4, 26, 19"/>
+		<StretchableImage id="IMG_PINK_PANEL" source="PinkPanel.png" margins="5, 4, 27, 21"/>
+		<StretchableImage id="IMG_TIPBUBBLE" source="TipBubble.png" margins="4, 3, 24, 19"/>
+	</Resources>
+	
+	<Template id="ImportView">
+		<View class="cn.edu.buaa.sei.jdat.vt.ImportView">
+			<View name="tabButton" class="cn.edu.buaa.sei.jdat.vt.widgets.TabButton">
+				<Handler event="postMouseClicked" handler="tabButtonClicked"/>
+			</View>
+			<View name="contentView0" backgroundColor="null">
+				<View name="btnImportJars" class="cn.edu.buaa.sei.jdat.vt.widgets.Button">
+					<Handler event="postMouseClicked" handler="btnImportJarsClicked"/>
+				</View>
+				<View name="btnImportDir" class="cn.edu.buaa.sei.jdat.vt.widgets.Button">
+					<Handler event="postMouseClicked" handler="btnImportDirClicked"/>
+				</View>
+				<View name="chkRecursively" class="cn.edu.buaa.sei.jdat.vt.widgets.LabelCheckBox"/>
+				<Paint><Image resource="IMG_DEPTH_BACKGROUND"/></Paint>
+			</View>
+			<View name="contentView1" backgroundColor="null" hidden="true">
+				<View name="lblURL" class="cn.edu.buaa.sei.jdat.vt.widgets.SealedLabel"/>
+				<View name="lblError" class="cn.edu.buaa.sei.jdat.vt.widgets.SealedLabel"/>
+				<View name="textBox" class="cn.edu.buaa.sei.jdat.vt.widgets.TextBox"/>
+				<View name="btnImportURL" class="cn.edu.buaa.sei.jdat.vt.widgets.Button">
+					<Handler event="postMouseClicked" handler="btnImportURLClicked"/>
+				</View>
+				<Paint><Image resource="IMG_DEPTH_BACKGROUND"/></Paint>
+			</View>
+			<View name="btnClose" class="cn.edu.buaa.sei.jdat.vt.widgets.Button">
+				<Handler event="postMouseClicked" handler="closeButtonClicked"/>
+			</View>
+		</View>
+		
+		<Layout target="tabButton">
+			<Left>100</Left><Right>100</Right>
+			<Top>8</Top><Height>35</Height>
+		</Layout>
+		<Layout target="btnClose">
+			<Width>150</Width><Height>35</Height>
+			<Right>8</Right><Bottom>8</Bottom>
+		</Layout>
+		<Layout target="contentView0">
+			<Left>8</Left><Right>8</Right>
+			<Top type="reference" margin="8">tabButton</Top>
+			<Bottom>51</Bottom>
+		</Layout>
+		<Layout target="contentView1">
+			<Left>8</Left><Right>8</Right>
+			<Top type="reference" margin="8">tabButton</Top>
+			<Bottom>51</Bottom>
+		</Layout>
+		<Layout target="btnImportJars">
+			<Left>16</Left><Top>20</Top><Width>150</Width><Height>35</Height>
+		</Layout>
+		<Layout target="btnImportDir">
+			<Left>16</Left>><Width>150</Width><Height>35</Height>
+			<Top type="reference" margin="16">btnImportJars</Top>
+		</Layout>
+		<Layout target="chkRecursively">
+			<Left type="reference" margin="8">btnImportDir</Left><Top type="binding">btnImportDir</Top><Height>35</Height><Width>150</Width>
+		</Layout>
+		<Layout target="lblURL">
+			<Left>16</Left><Width>30</Width><Top>28</Top><Height>35</Height>
+		</Layout>
+		<Layout target="textBox">
+			<Left type="reference" margin="8">lblURL</Left><Right>16</Right><Top>28</Top><Height>35</Height>
+		</Layout>
+		<Layout target="btnImportURL">
+			<Right>16</Right><Width>100</Width><Height>35</Height>
+			<Top type="reference" margin="8">textBox</Top>
+		</Layout>
+		<Layout target="lblError">
+			<Left>16</Left><Right type="reference" margin="8">btnImportURL</Right>
+			<Top type="binding">btnImportURL</Top><Height>35</Height>
+		</Layout>
+	</Template>
+
+</TemplateDefinitions>

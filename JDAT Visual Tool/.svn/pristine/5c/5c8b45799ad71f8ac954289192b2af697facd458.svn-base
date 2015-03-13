@@ -1,0 +1,20 @@
+JarInfo:<tr><td width="1%%"><span class="jar">%s</span></td><td><span class="uri">%s</span></td></tr>
+JarDependRow:<tr><td width="1%%"><span class="jar">%s</span></td><td><ul class="inline">%s</ul></td><td><ul class="inline">%s</ul></td></tr>
+JarDependItem:<li><span class="jar"><a href="%s">%s</a></span></li>
+JarDependItemE:<li><span class="jar external"><a href="%s">%s</a></span></li>
+JarDependItemU:<li><span class="unknownJar"><a href="%s">%s</a></span></li>
+JarRefTitle:<div class="subtitle">%s</div><div class="depend_uri">%s</div>
+PackageDependNumber:<div class="count_package">Number of Package Dependencies: %d</div>
+PackageDepend:<div class="depend_package"><span class="package">%s</span><span class="arrow"></span>%s</div>
+PackageName:<span class="package">%s</span>
+UnknownPkgName:<span class="unknownPackage">%s</span>
+ClassDependTable:<table border="1" cellpadding="5" cellspacing="0" class="yellow"><tr><th width="1%%">Type</th><th>References</th></tr>%s</table>
+ClassDepend:<tr class="code"><td>%s</td><td>%s</td></tr>
+ClassName:<span class="class">%s</span>
+ClassNameS:<span class="class super">%s</span>
+InterfaceName:<span class="interface">%s</span>
+InterfaceNameS:<span class="interface super">%s</span>
+EnumName:<span class="enum">%s</span>
+UnknownTypeName:<span class="unknownType">%s</span>
+UnknownTypeNameS:<span class="unknownType super">%s</span>
+GraphImage:<img src="%s" class="graph" />

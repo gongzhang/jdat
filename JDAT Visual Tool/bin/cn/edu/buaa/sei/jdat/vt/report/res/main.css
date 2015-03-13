@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin:0px;
+}
+
+.project_name {
+	padding:3px;
+	margin:0;
+	font-size:8px;
+	background:#000000;
+	color:#FFF;
+	font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	text-align:right;
+}
+
+.title {
+	padding:5px;
+	font-size:40px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+.backhome {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	margin:5px 20px 5px 20px;
+	background:#AEE6F1;
+	padding:4px;
+	display:inline-block;
+	float:right;
+}
+
+.depend_prefix {
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	color:#83A5AC;
+	font-weight:normal;
+	font-size:25px;
+	padding:5px;
+	float:left;
+	width:100px;
+	text-align:right;
+}
+
+.depend_unit {
+	clear:both;
+}
+
+.depend_jar {
+	float:left;
+}
+
+.depend_uri {
+	font-family:Verdana, Geneva, sans-serif;
+	color:#999;
+	font-size:12px;
+	padding-left:5px;
+}
+
+.content {
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.subtitle {
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	color:#2F6C7F;
+	font-weight:normal;
+	font-size:25px;
+	padding:5px;
+	/*background:#ABDEE4;*/
+}
+
+.section {
+	margin-top:20px;
+	margin-bottom:20px;
+	clear:both;
+}
+
+table {
+	max-width:800px;
+	font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	font-size:12px;
+	border:2px #2F6C7F solid;
+	margin-left:0px;
+	margin-right:0px;
+	border-collapse:collapse;
+	width:100%;
+}
+
+tr {
+	line-height:20px;
+}
+
+td {
+	vertical-align:top;
+}
+
+th {
+	background:#C3E7E5;
+	color:#2F6C7F;
+	text-align:left;
+}
+
+span.jar {
+	padding-left:20px;
+	background:url(../images/icon_jar.png) -6px -7px no-repeat;
+}
+
+span.external {
+	font-style:italic;
+}
+
+span.unknownJar {
+	padding-left:20px;
+	background:url(../images/icon_unknown_jar.png) -6px -7px no-repeat;
+}
+
+span.uri {
+	color:#666666;
+}
+
+a {
+	color:#345260;
+}
+
+a:hover {
+	color:#599CA5;
+}
+
+ul.inline {
+	border:0px;
+	padding:0px;
+	margin:0px;
+	list-style-type:none;
+}
+
+ul.inline li {
+	padding:1px;
+	float:left;
+	margin-right:3px;
+}
+
+.subtitle_package {
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	color:#9B8452;
+	font-weight:normal;
+	font-size:25px;
+	padding:5px;
+}
+
+.count_package {
+	display:inline-block;
+	background:#EADAB3;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	padding:5px;
+	margin-left:5px;
+	margin-bottom:10px;
+	color:#846C37;
+}
+
+.depend_package {
+	padding:5px;
+	margin-top:20px;
+	font-size:15px;
+	font-family:Verdana, Geneva, sans-serif;
+	background:#4F4333;
+}
+
+
+span.package {
+	padding-left:20px;
+	background:url(../images/icon_package.png) -7px -7px no-repeat;
+	font-family:"Courier New", Courier, monospace;
+	color:#F9E887;
+}
+
+span.arrow {
+	padding:8px;
+	background:url(../images/arrow.png);
+	display:inline-block;
+	vertical-align:bottom;
+}
+
+span.class {
+	padding:2px;
+	padding-left:20px;
+	background:url(../images/icon_class.png) -7px -7px no-repeat;
+	font-family:"Courier New", Courier, monospace;
+	/*color:#7F9F35;*/
+}
+
+span.interface {
+	padding:2px;
+	padding-left:20px;
+	background:url(../images/icon_interface.png) -7px -7px no-repeat;
+	font-family:"Courier New", Courier, monospace;
+	/*color:#4D407D;*/
+}
+
+span.enum {
+	padding:2px;
+	padding-left:20px;
+	background:url(../images/icon_enum.png) -7px -7px no-repeat;
+	font-family:"Courier New", Courier, monospace;
+}
+
+span.unknownType {
+	padding:2px;
+	padding-left:20px;
+	background:url(../images/icon_unknown_type.png) -7px -7px no-repeat;
+	font-family:"Courier New", Courier, monospace;
+}
+
+span.unknownPackage {
+	padding-left:20px;
+	background:url(../images/icon_unknown_pkg.png) -7px -7px no-repeat;
+	font-family:"Courier New", Courier, monospace;
+	color:#F9E887;
+}
+
+span.super {
+	font-weight:bold;
+	text-decoration:underline;
+	/*font-style:italic;*/
+}
+
+.code {
+	font-family:"Courier New", Courier, monospace;
+	font-size:12px;
+	line-height:20px;
+}
+
+table.yellow {
+	border-color:#4F4333;
+}
+
+table.yellow th {
+	background:#F9E887;
+	color:#4F4333;
+}
+
+img.graph {
+	max-width:100%;
+}
